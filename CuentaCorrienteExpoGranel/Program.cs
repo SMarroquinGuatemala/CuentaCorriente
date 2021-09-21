@@ -25,9 +25,9 @@ namespace CuentaCorrienteExpoGranel
          {
 
             //FechaFinal = DateTime.Now; //Convert.ToDateTime( DateTime.Now.AddDays(-1).ToString("dd/MM/yyyy"));
-            FechaFinal = Convert.ToDateTime("08/01/2021");
+            FechaFinal = Convert.ToDateTime("01/06/2021");
             FechaInicial = Convert.ToDateTime(FechaFinal.AddDays(-1).ToString("dd/MM/yyyy"));
-            FechaInicialMaxa = Convert.ToDateTime(FechaFinal.AddDays(-6).ToString("dd/MM/yyyy"));
+            FechaInicialMaxa = Convert.ToDateTime(FechaFinal.AddDays(-1).ToString("dd/MM/yyyy"));
 
 
             //FechaInicialMaxa=Convert.ToDateTime("01/11/2020");
@@ -398,7 +398,7 @@ namespace CuentaCorrienteExpoGranel
         public string tipo_movimiento { get; set; }
         public DateTime fecha { get; set; }
         public string serie { get; set; }
-        public int numero { get; set; }
+        public Int64 numero { get; set; }
         public string convenio { get; set; }
         public decimal sacos { get; set; }
         public string calidad { get; set; }
